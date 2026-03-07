@@ -1,0 +1,11 @@
+nome_completo = input("Digite o nome completo: ")
+email = input("Digite seu e-mail: ")
+cidade = input("Sua cidade: ")
+
+print("\n")
+print("======= CADASTRO =======")
+print(f"Nome completo: {nome_completo.title() .strip()}")
+print(f"E-mail: {email.lower() .strip()}")
+print(f"Cidade: {cidade.title() .strip()}")
+print(f"Caracteres nome: {len(nome_completo)}")
+print("========================")

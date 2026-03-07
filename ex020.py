@@ -1,0 +1,11 @@
+nome_produto = input("Nome do produto: ")
+preco_produto = float(input("Preço do produto: "))
+qtd_produto = int(input("Quantidade de itens: "))
+total = preco_produto * qtd_produto
+print("")
+print("===== Nota Fiscal =====")
+print(f"Produto:{nome_produto:>14}")
+print(f"Preço unitário: R${preco_produto:>.2f}")
+print(f"Quantidade: {qtd_produto:>10}")
+print(f"Total: R${(total):>13.2f}")
+print("=======================")

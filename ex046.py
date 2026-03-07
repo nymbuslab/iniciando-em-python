@@ -1,0 +1,11 @@
+texto = input('Digite um paragrafo de um texto: ').strip() .capitalize()
+divisao_texto = texto.split()
+palavra = max(divisao_texto, key=len)
+
+print('\n')
+print('======= RELATÓRIO =======')
+print(f'Caracteres com espaços: {len(texto)}')
+print(f'Caracteres sem espaços: {len(texto) - texto.count(' ')}')
+print(f'Total de palavras: {len(divisao_texto)}') 
+print(f'Palavra mais longa: {palavra} ({len(palavra)} letras)')
+print('=========================')
