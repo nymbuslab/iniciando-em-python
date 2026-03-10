@@ -4,7 +4,9 @@
     "codigo",
     "cracha",
     "divisao",
-    "preco"
+    "Mult",
+    "preco",
+    "usuario"
   ],
   "python.REPL.enableREPLSmartSend": false
 }
