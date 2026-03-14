@@ -1,11 +1,12 @@
-'''
+"""
 Validador de Senha
 Um sistema precisa validar senhas cadastradas. Peça uma senha ao usuário e verifique:
 
 Se tem pelo menos 8 caracteres → "Tamanho OK" ou "Senha muito curta"
 Se contém "@" ou "#" → "Contém caractere especial" ou "Sem caractere especial"
 Exiba a senha com os caracteres do meio substituídos por * — mantendo apenas o primeiro e o último caractere visíveis
-'''
+"""
+
 senha = input("Crie uma senha: ").strip()
 
 if len(senha) >= 8:

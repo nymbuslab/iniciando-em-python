@@ -1,5 +1,5 @@
-nome_cliente = input("Nome do cliente: ").strip() .title()
-nome_produto = input("Produto: ").strip() .title()
+nome_cliente = input("Nome do cliente: ").strip().title()
+nome_produto = input("Produto: ").strip().title()
 preco_unitario = float(input("Preço do produto (Un): R$"))
 quantidade_item = int(input("Quantidade: "))
 desconto = int(input("Desconto a vista: "))
