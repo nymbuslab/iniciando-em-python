@@ -10,7 +10,7 @@ distancia_viagem = float(input("Digite a distância da viagem em km: "))
 if distancia_viagem <= 0:
     preco_passagem = "Distância inválida"
 elif distancia_viagem <= 200:
-    preco_passagem = distancia_viagem * 0.5
+    preco_passagem = distancia_viagem * 0.50
 else:
     preco_passagem = distancia_viagem * 0.45
 
