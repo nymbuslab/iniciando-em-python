@@ -9,7 +9,7 @@ e peça para o usuário escolher qual será a base de conversão
 
 numero = int(input("Digite um número inteiro qualquer: "))
 base_conversao = input(
-    "Escolha uma das opções para converte (1 - binário, 2 - octal ou 3 - hexadecimal: )"
+    "Escolha uma das opções para converte: \n[1] Binário\n[2] Octal\n[3] Hexadecimal"
 ).strip()
 
 if base_conversao not in ["1", "2", "3"]:

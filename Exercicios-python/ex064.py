@@ -9,11 +9,11 @@ de acordo com a sua idade:
 O programa também devera mostrar o tempo que falta ou que passou do prazo.
 """
 
-from datetime import datetime
+from datetime import date
 
 nome_recruta = input("Digite o nome do candidato: ").strip().title()
 ano_nascimento = int(input("Digite o ano de nascimento do candidato: "))
-ano_atual = datetime.now().year
+ano_atual = date.today().year
 idade = ano_atual - ano_nascimento
 
 

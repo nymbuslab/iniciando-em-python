@@ -10,10 +10,10 @@ de acordo com a idade:
 - Acima: Master
 """
 
-from datetime import datetime
+from datetime import date
 
 ano_nascimento = int(input("Digite o ano de nascimento do atleta: "))
-idade = datetime.now().year - ano_nascimento
+idade = date.today().year - ano_nascimento
 
 if idade <= 0:
     categoria = "Sem categoria — idade inválida"

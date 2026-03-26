@@ -46,3 +46,30 @@ if forma_pgto == "3":
 elif forma_pgto == "4":
     print(f"Parcelas: 3x de R${parcela:.2f}")
 print(f"Total a pagar: R${total_pagar:.2f}")        
+
+
+
+print(f"{' LOJAS NYMBUS ':=^40}")
+preco_compras = float(input("Preço das compras: "))
+print("""FORMAS DE PAGAMENTO
+      [1] à vista dinheiro/cheque
+      [2] à vista cartão
+      [3] 2x no cartão
+      [4] 3x ou mais no cartão
+      """)
+frm_pgto = int(input("Digite a opção de pagamento: "))
+
+if frm_pgto == 1:
+    total = preco_compras * 0.1
+elif frm_pgto == 2:
+    total = preco_compras * 0.05
+elif frm_pgto == 3:
+    total = preco_compras
+    parcela = preco_compras / 2
+    print(f"Sua compra sera parcelada em 2x de R${parcela:.2f}")
+elif frm_pgto == 3:
+    total = preco_compras + (preco_compras * 0.2)
+    qtd_parcelas = int(input("Quantas parcelas: "))
+    parcela = total / qtd_parcelas
+    print(f"Sua compra sera parcelada em {qtd_parcelas}x de R${parcela:.2f}")
+print(f"Sua compra de R${preco_compras:.2f} vai custar R${total:.2f} no final.") 
